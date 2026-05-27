@@ -126,6 +126,28 @@ yolo predict model=yolov8n.pt source='https://ultralytics.com/images/bus.jpg
 - Detected objects: persons, bus, stop sign
 - Output saved in:
   runs/detect/predict/
+---
 
-### 🖼️ Sample Output:
-![Detection](runs/detect/predict/bus.jpg)
+
+### 🚀 YOLO-Based Custom Object Detection
+📌 Overview
+
+This project demonstrates a complete end-to-end Computer Vision pipeline using YOLO, covering the full ML workflow from raw video to trained object detection model.
+
+The system is capable of detecting custom classes such as:
+
+🚑 Ambulance
+🚗 Vehicle
+🚶 Person
+
+The project includes dataset creation, annotation, model training, evaluation, and inference.
+
+🎯 Key Features
+🎥 Video → Frame extraction using FFmpeg
+🗂️ Custom dataset creation
+🏷️ Manual annotation using Label Studio
+📦 YOLO-format dataset preparation
+🧠 Transfer learning using YOLOv8 (nano model)
+📊 Model training on CPU
+🔍 Object detection on unseen test images
+📁 Output generation with bounding boxes
